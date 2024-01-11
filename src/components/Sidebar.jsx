@@ -23,7 +23,7 @@ function Sidebar({ onStartAddProject, projects, onSelectProject, selectedProject
                         <li key={project.id}>
                             <button
                                 className={cssClasses}
-                                onClick={onSelectProject}
+                                onClick={() => onSelectProject(project.id)}
                             >
                                 {project.title}
                             </button>
